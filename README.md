@@ -1,2 +1,2 @@
-# about-me
-Curriculum vitae &amp; Portfolio
+# curriculum-vitae
+CV
