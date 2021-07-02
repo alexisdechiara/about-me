@@ -4,30 +4,34 @@
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
+  <meta name="language" content="FR">
+  <meta name="author" content="Alexis De Chiara">
+  <meta name="description" content="CV et portfolio en ligne de Alexis De Chiara">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="color-theme" content="#0d6efd">
   <meta name="color-scheme" content="light dark">
-  <meta name="author" content="Alexis De Chiara">
-  <meta name="description" content="CV et portfolio en ligne de Alexis De Chiara">
 
-  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
- 
-  <!-- Load the alternate CSS first ...
-           in this case the Bootstrap-Dark Variant CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.0.2/dist/css/bootstrap-night.min.css" media="(prefers-color-scheme: dark)" rel="stylesheet" id="dark-style">
-  <!-- and then the primary CSS last ...  
-           in this case the (original) Bootstrap Variant CSS -->
+  <!-- Fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+  <!-- Dark and light CSS bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.0.2/dist/css/bootstrap-night.min.css" media="(prefers-color-scheme: dark)" rel="stylesheet" id="dark-style">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.0.2/dist/css/bootstrap.min.css" rel="stylesheet" id="light-style">
 
+  <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <!-- Personnals files -->
   <link rel="stylesheet" href="style/main.css">
-
   <script src="js/main.js" defer></script>
 
   <title>Alexis De Chiara</title>
   
 </head>
-<body style="overflow-x:hidden">
+<body>
   <header class="bg-primary">
     <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-primary" id="navigation">
       <div class="container-fluid">
@@ -47,16 +51,18 @@
     </nav>
   </header>
   <main>
-    <div class="container-fluid bg-primary d-flex justify-content-center align-content-center" id="presentation">
-      <div class="card" style="max-width: 30rem">
-        <img src="https://via.placeholder.com/400.png?text=Place+Holder" class="card-img-top" height="400px">
-        <div class="card-body">
-          <h5 class="card-title">
-            Alexis De Chiara
-          </h5>
-          <div class="card-text" style="text-align: justify">
-            Programmeur DevOps Fullstack, spécialisé principalement en UI et UX je peut réaliser un site web de A à Z, 
-            j'ai aussi des compétences en développement d'application Java pour Windows ou Android.
+    <div class="container-fluid bg-primary" id="presentation">
+      <div class="container d-flex justify-content-center align-content-center">
+        <div class="card" style="max-width: 30rem">
+          <img src="https://via.placeholder.com/400.png?text=Place+Holder" class="card-img-top" height="400px">
+          <div class="card-body">
+            <h5 class="card-title">
+              Alexis De Chiara
+            </h5>
+            <div class="card-text" style="text-align: justify">
+              Programmeur DevOps Fullstack, spécialisé principalement en UI et UX je peut réaliser un site web de A à Z,
+              j'ai aussi des compétences en développement d'application Java pour Windows ou Android.
+            </div>
           </div>
         </div>
       </div>
@@ -67,63 +73,103 @@
       </path>
     </svg>
     <div class="container-fluid" id="skills">
-      <h3 class="my-4">Language de programmation</h3>
-      <div class="row g-3">
-        <img src="img/logo/logo-java-medium.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-c-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-cSharp-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-html-medium.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-css-medium.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-javascript-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-typescript-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-php-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-bash-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-git-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-access-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-mySQL-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-postgreSQL-short.svg" alt="" class="col-auto" height="64px">
+      <h1 class="text-center fw-bold mb-5">Compétences</h1>
+      <div class="container d-flex justify-content-center align-content-center">
+        <div class="accordion" id="skills-accordion"  style="width: 750px">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="skills-headingOne">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapsOne" aria-expanded="true" aria-controls="skills-collapsOne">
+                Language de programmation
+              </button>
+            </h2>
+            <div id="skills-collapsOne" class="accordion-collapse collapse show" aria-labelledby="skills-headingOne">
+              <div class="accordion-body">
+                <div class="row g-3 justify-content-center">
+                  <img src="img/logo/logo-java-short.svg" alt="Java" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#javaModal" height="64px">
+                  <img src="img/logo/logo-c-short.svg" alt="C" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#cModal" height="64px">
+                  <img src="img/logo/logo-cSharp-short.svg" alt="C#" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#cSharpModal" height="64px">
+                  <img src="img/logo/logo-html-medium.svg" alt="HTML5" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#htmlModal" height="64px">
+                  <img src="img/logo/logo-css-medium.svg" alt="CSS3" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#cssModal" height="64px">
+                  <img src="img/logo/logo-javascript-short.svg" alt="JavaScript" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#javascriptModal" height="64px">
+                  <img src="img/logo/logo-typescript-short.svg" alt="TypeScript" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#typescriptModal" height="64px">
+                  <img src="img/logo/logo-php-short.svg" alt="PHP" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#phptModal" height="64px">
+                  <img src="img/logo/logo-bash-short.svg" alt="BASH" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#bashModal" height="64px">
+                  <img src="img/logo/logo-git-short.svg" alt="git" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#gitModal" height="64px">
+                  <img src="img/logo/logo-access-short.svg" alt="Access" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#accessModal" height="64px">
+                  <img src="img/logo/logo-mySQL-short.svg" alt="MySQL" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#mysqlModal" height="64px">
+                  <img src="img/logo/logo-postgreSQL-short.svg" alt="PostgreSQL" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#postgresqlModal" height="64px">
+                  <img src="img/logo/logo-oracle-short.svg" alt="Oracle Database" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#oracledatabaseModal" height="64px">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="skills-headingTwo">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseTwo" aria-expanded="true" aria-controls="skills-collapseTwo">
+                Framework
+              </button>
+            </h2>
+            <div id="skills-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="skills-headingTwo">
+              <div class="accordion-body">
+                <div class="row g-3 justify-content-center">
+                  <img src="img/logo/logo-angular-short.svg" alt="" class="col-auto zoom clickable" height="64px">
+                  <img src="img/logo/logo-laravel-short.svg" alt="" class="col-auto zoom clickable" height="64px">
+                  <img src="img/logo/logo-symfony-short.svg" alt="" class="col-auto zoom clickable" height="64px">
+                  <img src="img/logo/logo-spring-short.svg" alt="" class="col-auto zoom clickable" height="64px">
+                  <img src="img/logo/logo-hibernate-short.svg" alt="" class="col-auto zoom clickable" height="64px">
+                  <img src="img/logo/logo-bootstrap-short.svg" alt="" class="col-auto zoom clickable" height="64px">
+                  <img src="img/logo/logo-material-short.svg" alt="" class="col-auto zoom clickable" height="64px">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="skills-headingThree">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseThree" aria-expanded="true" aria-controls="skills-collapseThree">
+                Logiciel de traitement
+              </button>
+            </h2>
+            <div id="skills-collapseThree" class="accordion-collapse collapse show" aria-labelledby="skills-headingThree">
+              <div class="accordion-body">
+                <div class="row g-3 justify-content-center">
+                  <img src="img/logo/logo-googleDrive-short.svg" alt="" class="col-auto zoom clickable" height="64px">
+                  <img src="img/logo/logo-word-short.svg" alt="" class="col-auto zoom clickable" height="64px">
+                  <img src="img/logo/logo-powerpoint-short.svg" alt="" class="col-auto zoom clickable" height="64px">
+                  <img src="img/logo/logo-excel-short.svg" alt="" class="col-auto zoom clickable" height="64px">
+                  <img src="img/logo/logo-premierPro-short.svg" alt="" class="col-auto zoom clickable" height="64px">
+                  <img src="img/logo/logo-photoshop-short.svg" alt="" class="col-auto zoom clickable" height="64px">
+                  <img src="img/logo/logo-figma-short.svg" alt="" class="col-auto zoom clickable" height="64px">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <h3 class="my-4">Framework</h3>
-      <div class="row g-3">
-        <img src="img/logo/logo-angular-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-laravel-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-symfony-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-spring-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-hibernate-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-bootstrap-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-material-short.svg" alt="" class="col-auto" height="64px">
-      </div>
-      <h3 class="my-4">Logiciel de traitement</h3>
-      <div class="row g-3">
-         <img src="img/logo/logo-googleDrive-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-word-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-powerpoint-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-excel-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-premierPro-short.svg" alt="" class="col-auto" height="64px">
-        <img src="img/logo/logo-photoshop-short.svg" alt="" class="col-auto" height="64px">
-         <img src="img/logo/logo-figma-short.svg" alt="" class="col-auto" height="64px">
-      </div>
+     
     </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#dc3545" fill-opacity="1"
           d="M0,192L60,202.7C120,213,240,235,360,213.3C480,192,600,128,720,117.3C840,107,960,149,1080,138.7C1200,128,1320,64,1380,32L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
         </path>
       </svg>
-      <div class="container-fluid bg-danger timeline" id="career">
+      <div class="container-fluid bg-danger" id="career">
+        <h1 class="text-center text-light fw-bold mb-5">Carrière</h1>
+        <div class="container timeline py-5">
           <div class="timeline-container timeline-left">
             <div class="content rounded">
               <h3> <span class="badge bg-secondary">2019</span> Baccalauréat Scientifique</h3>
               <p class="fs-5">Lycée Calmette</p>
-              <p style="text-align: justify"><strong>Option ISN</strong> avec Programmation en java et python, mais aussi apprentissage du html5 et css3 à part.</p>
+              <p class="text-justify"><strong>Option ISN</strong> avec Programmation en java et python, mais aussi apprentissage du html5 et css3 à part.</p>
             </div>
           </div>
           <div class="timeline-container timeline-right">
             <div class="content rounded">
               <h3><span class="badge bg-secondary"> 2021</span> DUT Informatique</h3>
               <p class="fs-5">IUT Nice Côte d'Azur</p>
-              <p style="text-align: justify">Formation initiale menant sur l'apprentissage de l'ensemble des types de langage de programmation existants puis <strong> stage en entreprise de 4 mois à UBS Monaco en tant que développeur web</strong>.</p>
+              <p class="text-justify">Formation initiale menant sur l'apprentissage de l'ensemble des types de langage de programmation existants puis <strong> stage en entreprise de 4 mois à UBS Monaco en tant que développeur web</strong>.</p>
             </div>
           </div>
+        </div>
       </div>
       <svg height="100%" width="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
         <path
@@ -131,24 +177,51 @@
           stroke="none" stroke-width="0" fill="#dc3545ff" class="transition-all duration-300 ease-in-out delay-150" transform="rotate(-180 720 200)"></path>
       </svg>
     <div class="container-fluid" id="portfolio">
-      <div class="row row-cols-3 justify-content-center align-items-center g-5">
-        <div class="col-4 d-flex justify-content-center"><a href="#"><img class="img-fluid rounded ratio ratio-16x9" alt="..." src="https://via.placeholder.com/500x281.png" alt="" width="400px"></a></div>
-        <div class="col-4 d-flex justify-content-center"><a href="#"><img class="img-fluid rounded ratio ratio-16x9" alt="..." src="https://via.placeholder.com/500x281.png" alt="" width="400px"></a></div>
-        <div class="col-4 d-flex justify-content-center"><a href="#"><img class="img-fluid rounded ratio ratio-16x9" alt="..." src="https://via.placeholder.com/500x281.png" alt="" width="400px"></a></div>
-        <div class="col-4 d-flex justify-content-center"><a href="#"><img class="img-fluid rounded ratio ratio-16x9" alt="..." src="https://via.placeholder.com/500x281.png" alt="" width="400px"></a></div>
-        <div class="col-4 d-flex justify-content-center"><a href="#"><img class="img-fluid rounded ratio ratio-16x9" alt="..." src="https://via.placeholder.com/500x281.png" alt="" width="400px"></a></div>
-        <div class="col-4 d-flex justify-content-center"><a href="#"><img class="img-fluid rounded ratio ratio-16x9" alt="..." src="https://via.placeholder.com/500x281.png" alt="" width="400px"></a></div>
+      <h1 class="text-center fw-bold mb-5">Portfolio</h1>
+      <div class="container">
+        <div class="row row-cols-3 justify-content-center align-items-center g-5">
+          <div class="col-4 d-flex justify-content-center"><a href="#"><img class="img-fluid rounded ratio ratio-16x9" alt="..." src="https://via.placeholder.com/500x281.png" alt="" width="400px"></a></div>
+          <div class="col-4 d-flex justify-content-center"><a href="#"><img class="img-fluid rounded ratio ratio-16x9" alt="..." src="https://via.placeholder.com/500x281.png" alt="" width="400px"></a></div>
+          <div class="col-4 d-flex justify-content-center"><a href="#"><img class="img-fluid rounded ratio ratio-16x9" alt="..." src="https://via.placeholder.com/500x281.png" alt="" width="400px"></a></div>
+          <div class="col-4 d-flex justify-content-center"><a href="#"><img class="img-fluid rounded ratio ratio-16x9" alt="..." src="https://via.placeholder.com/500x281.png" alt="" width="400px"></a></div>
+          <div class="col-4 d-flex justify-content-center"><a href="#"><img class="img-fluid rounded ratio ratio-16x9" alt="..." src="https://via.placeholder.com/500x281.png" alt="" width="400px"></a></div>
+          <div class="col-4 d-flex justify-content-center"><a href="#"><img class="img-fluid rounded ratio ratio-16x9" alt="..." src="https://via.placeholder.com/500x281.png" alt="" width="400px"></a></div>
+        </div>
       </div>
     </div>
     <svg height="100%" width="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
       <path d="M 0,400 C 0,400 0,200 0,200 C 93.64285714285714,175.03571428571428 187.28571428571428,150.07142857142858 292,174 C 396.7142857142857,197.92857142857142 512.5,270.75 655,263 C 797.5,255.25 966.7142857142858,166.92857142857142 1102,143 C 1237.2857142857142,119.07142857142858 1338.642857142857,159.53571428571428 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#212529ff" class="transition-all duration-300 ease-in-out delay-150">
       </path>
     </svg>
-    <div class="container-fluid bg-dark text-light" id="contact" style="padding-bottom: 400px">
-        <h2 class="col-12 text-center fs-1 fw-bold mb-5">
-          Contact
-        </h2>
-        <div class="row row-cols-3 justify-content-center g-5">
+    <div class="container-fluid bg-dark text-light row justify-content-center" id="contact" style="margin:0">
+        <h1 class="col-12 text-center fw-bold mb-5">Contact</h1>
+        <form class="row" method="POST" style="width: 750px;">
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="email-name" class="form-label">Nom<sup>*</sup></label>
+              <input type="text" class="form-control" id="email-name">
+            </div>
+            <div class="mb-3">
+              <label for="email-adress" class="form-label">Adresse de courriel<sup>*</sup></label>
+              <input type="email" class="form-control" id="email-adress" required>
+              <div id="invalid-email" class="invalid-feedback">Merci de mettre une adresse valide</div>
+            </div>
+            <div class="mb-3">
+              <label for="email-subject" class="form-label">Sujet</label>
+              <input type="text" class="form-control" id="email-subject">
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="email-message" class="form-label">Message</label>
+            <textarea class="form-control" id="email-name" rows="5"></textarea>
+          </div>
+          <div class=" d-grid mb-3">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+        <!--<?php include 'php/send_email.php';?>-->
+        <div class="row justify-content-center g-5">
+          <!--
           <div class="col-auto">
             <a href="mailto:alexis.de-chiara@hotmail.fr" class="d-flex flex-column text-decoration-none text-light text-wrap">
               <i class="bi bi-envelope-fill fs-1 align-self-center"></i>
@@ -161,15 +234,28 @@
               <span class="fs-4 align-self-center">Téléphone</span>
             </a>
           </div>
+          -->
           <div class="col-auto">
-            <a href="#" class="d-flex flex-column text-decoration-none text-light text-wrap">
-              <i class="bi bi-linkedin fs-1 align-self-center"></i>
-              <span class="fs-4 align-self-center">LinkdedIn</span>
+            <a href="https://github.com/alexisdechiara" class="d-flex flex-column text-decoration-none text-light text-wrap">
+              <i class="fab fa-github fs-1 align-self-center"></i>
+              <span class="fs-4 align-self-center lh-lg">GitHub</span>
+            </a>
+          </div>
+          <div class="col-auto">
+            <a href="https://gitlab.com/AlexisDeChiara" class="d-flex flex-column text-decoration-none text-light text-wrap">
+              <i class="fab fa-gitlab fs-1 align-self-center"></i>
+              <span class="fs-4 align-self-center lh-lg">GitLab</span>
+            </a>
+          </div>
+          <div class="col-auto">
+            <a href="https://fr.linkedin.com/in/AlexisDeChiara" class="d-flex flex-column text-decoration-none text-light text-wrap">
+              <i class="fab fa-linkedin fs-1 align-self-center"></i>
+              <span class="fs-4 align-self-center lh-lg">LinkdedIn</span>
             </a>
           </div>
         </div>
-      </div>
     </div>
+    <button type="button" id="darkButton" class="btn btn-dark btn-lg rounded-circle position-fixed bottom-0 end-0 m-5"><i class="bi bi-moon"></i></button>
   </main>
   <footer>
     <div class="container-fluid bg-dark text-light text-center p-3">
@@ -177,20 +263,20 @@
         <div class="col-3 text-start">
           Site sous license MIT
         </div>
-        <div class="col-6 text-center">
-          Réalisé par Alexis De Chiara
+        <div class="col-6 text-center" id="realised">
+          Réalisé par&nbsp
         </div>
         <div class="col-3 text-end">
-          version 
+          version 1.0
         </div>
       </div>
     </div>
   </footer>
 
-  <button type="button" id="darkButton" class="btn btn-dark btn-lg rounded-circle position-fixed bottom-0 end-0 m-3"><i class="bi bi-moon"></i></button>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
+  <!--<?php include "./html/modals.html" ?>-->
 </body>
 
 </html>

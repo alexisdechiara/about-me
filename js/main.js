@@ -3,11 +3,22 @@ const skills = document.getElementById('skills');
 const career = document.getElementById('career');
 const portfolio = document.getElementById('portfolio');
 const contact = document.getElementById('contact');
+const metas = document.getElementsByTagName('meta');
 
 let nav = document.getElementById('navigation');
 let isDarkMode = false;
 window.addEventListener("scroll", updateNav);
 document.getElementById('darkButton').addEventListener("click", toggleDarkMode);
+
+document.getElementById('realised').innerText += getMeta("author");
+
+fetch("./html/modals.html")
+    .then(response => {
+        return response.text()
+    })
+    .then(data => {
+        document.querySelector("body").innerHTML += data;
+    });
 
 function updateNav() {
     console.log();
@@ -84,4 +95,16 @@ function toggleDarkMode() {
         dark.setAttribute("media", "(prefers-color-scheme: dark)");
         isDarkMode = false;
     }
+}
+
+function getMeta(metaName) {
+    const metas = document.getElementsByTagName('meta');
+
+    for (let i = 0; i < metas.length; i++) {
+        if (metas[i].getAttribute('name') === metaName) {
+            return metas[i].getAttribute('content');
+        }
+    }
+
+    return '';
 }
