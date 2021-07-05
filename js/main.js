@@ -12,14 +12,6 @@ document.getElementById('darkButton').addEventListener("click", toggleDarkMode);
 
 document.getElementById('realised').innerText += getMeta("author");
 
-fetch("./html/modals.html")
-    .then(response => {
-        return response.text()
-    })
-    .then(data => {
-        document.querySelector("body").innerHTML += data;
-    });
-
 function updateNav() {
     console.log();
     
@@ -108,3 +100,11 @@ function getMeta(metaName) {
 
     return '';
 }
+
+fetch("./html/modals.html")
+    .then(response => {
+        return response.text()
+    })
+    .then(data => {
+        document.querySelector("body").innerHTML += data;
+    });

@@ -46,6 +46,17 @@ footer > .container-fluid {
   text-align: justify;
 }
 
+.portfolio-img {
+  -webkit-transition: .25s;
+  transition: .25s;
+}
+
+.portfolio-img:hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;

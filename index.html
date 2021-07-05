@@ -51,19 +51,56 @@
     </nav>
   </header>
   <main>
-    <div class="container-fluid bg-primary" id="presentation">
-      <div class="container d-flex justify-content-center align-content-center">
-        <div class="card" style="max-width: 30rem">
+    <div class="container-fluid bg-primary d-flex flex-column align-items-center" id="presentation">
+      <h1 class="text-center col-12 fw-bold mb-5 text-light" style="display: none;">Présentation</h1>
+      <div class="container row row-cols-2 g-5 justify-content-center">
+        <div class="col-auto">
+          <div class="card" style="max-width: 30rem">
           <img src="https://via.placeholder.com/400.png?text=Place+Holder" class="card-img-top" height="400px">
           <div class="card-body">
-            <h5 class="card-title">
-              Alexis De Chiara
-            </h5>
+            <h2 class="card-title fs-5 fw-bold">Alexis De Chiara</h2>
             <div class="card-text" style="text-align: justify">
-              Programmeur DevOps Fullstack, spécialisé principalement en UI et UX je peut réaliser un site web de A à Z,
-              j'ai aussi des compétences en développement d'application Java pour Windows ou Android.
+              Programmeur DevOps Fullstack, spécialisé principalement en UI et UX, je peut réaliser un site web de A à Z.
+              J'ai aussi des compétences en développement d'application Java pour Windows ou Android.
             </div>
           </div>
+        </div>
+        </div>
+        
+        <div class="col-4">
+          <div class="row row-cols-1 g-3 justify-content-center">
+            <div class="col">
+              <div class="card">
+                <h3 class="card-header fs-5">
+                  Diplôme
+                </h3>
+                <div class="card-body">
+                  DUT Informatique
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <h3 class="card-header fs-5">
+                  Emploi
+                </h3>
+                <div class="card-body">
+                  Stagiaire à UBS (Monaco) S.A.
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <h3 class="card-header fs-5">
+                  Spécialisation
+                </h3>
+                <div class="card-body">
+                  DevOps - Fullstack
+                </div>
+              </div>
+            </div>
+          </div>
+          
         </div>
       </div>
     </div>
@@ -92,7 +129,7 @@
                   <img src="img/logo/logo-css-medium.svg" alt="CSS3" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#cssModal" height="64px">
                   <img src="img/logo/logo-javascript-short.svg" alt="JavaScript" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#javascriptModal" height="64px">
                   <img src="img/logo/logo-typescript-short.svg" alt="TypeScript" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#typescriptModal" height="64px">
-                  <img src="img/logo/logo-php-short.svg" alt="PHP" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#phptModal" height="64px">
+                  <img src="img/logo/logo-php-short.svg" alt="PHP" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#phpModal" height="64px">
                   <img src="img/logo/logo-bash-short.svg" alt="BASH" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#bashModal" height="64px">
                   <img src="img/logo/logo-git-short.svg" alt="git" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#gitModal" height="64px">
                   <img src="img/logo/logo-access-short.svg" alt="Access" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#accessModal" height="64px">
@@ -112,13 +149,13 @@
             <div id="skills-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="skills-headingTwo">
               <div class="accordion-body">
                 <div class="row g-3 justify-content-center">
-                  <img src="img/logo/logo-angular-short.svg" alt="" class="col-auto zoom clickable" height="64px">
-                  <img src="img/logo/logo-laravel-short.svg" alt="" class="col-auto zoom clickable" height="64px">
-                  <img src="img/logo/logo-symfony-short.svg" alt="" class="col-auto zoom clickable" height="64px">
-                  <img src="img/logo/logo-spring-short.svg" alt="" class="col-auto zoom clickable" height="64px">
-                  <img src="img/logo/logo-hibernate-short.svg" alt="" class="col-auto zoom clickable" height="64px">
-                  <img src="img/logo/logo-bootstrap-short.svg" alt="" class="col-auto zoom clickable" height="64px">
-                  <img src="img/logo/logo-material-short.svg" alt="" class="col-auto zoom clickable" height="64px">
+                  <img src="img/logo/logo-angular-short.svg" alt="Angular" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#angularModal" height="64px">
+                  <img src="img/logo/logo-laravel-short.svg" alt="Laravel" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#laravelModal" height="64px">
+                  <img src="img/logo/logo-symfony-short.svg" alt="Symfony" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#symfonyModal" height="64px">
+                  <img src="img/logo/logo-spring-short.svg" alt="Spring" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#springModal" height="64px">
+                  <img src="img/logo/logo-hibernate-short.svg" alt="Hibernate" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#hibernateModal" height="64px">
+                  <img src="img/logo/logo-bootstrap-short.svg" alt="Bootstrap" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#bootstrapModal" height="64px">
+                  <img src="img/logo/logo-material-short.svg" alt="Material" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#materialModal" height="64px">
                 </div>
               </div>
             </div>
@@ -126,19 +163,44 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="skills-headingThree">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseThree" aria-expanded="true" aria-controls="skills-collapseThree">
-                Logiciel de traitement
+                Outil de développement
               </button>
             </h2>
             <div id="skills-collapseThree" class="accordion-collapse collapse show" aria-labelledby="skills-headingThree">
               <div class="accordion-body">
                 <div class="row g-3 justify-content-center">
-                  <img src="img/logo/logo-googleDrive-short.svg" alt="" class="col-auto zoom clickable" height="64px">
-                  <img src="img/logo/logo-word-short.svg" alt="" class="col-auto zoom clickable" height="64px">
-                  <img src="img/logo/logo-powerpoint-short.svg" alt="" class="col-auto zoom clickable" height="64px">
-                  <img src="img/logo/logo-excel-short.svg" alt="" class="col-auto zoom clickable" height="64px">
-                  <img src="img/logo/logo-premierPro-short.svg" alt="" class="col-auto zoom clickable" height="64px">
-                  <img src="img/logo/logo-photoshop-short.svg" alt="" class="col-auto zoom clickable" height="64px">
-                  <img src="img/logo/logo-figma-short.svg" alt="" class="col-auto zoom clickable" height="64px">
+                  <img src="img/logo/logo-figma-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#figmaModal" height="64px">
+                  <img src="img/logo/logo-gitHub-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#gitHubModal" height="64px">
+                  <img src="img/logo/logo-gitLab-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#gitLabModal" height="64px">
+                  <img src="img/logo/logo-confluence-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#confluenceModal" height="64px">
+                  <img src="img/logo/logo-jira-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#jiraModal" height="64px">
+                  <img src="img/logo/logo-trello-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#trelloModal" height="64px">
+                  <img src="img/logo/logo-eclipse-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#eclipseModal" height="64px">
+                  <img src="img/logo/logo-intelij-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#intelijModal" height="64px">
+                  <img src="img/logo/logo-visualStudio-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#visualStudioModal" height="64px">
+                  <img src="img/logo/logo-visualStudioCode-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#visualStudioCodeModal" height="64px">
+                  <img src="img/logo/logo-atom-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#atomModal" height="64px">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="skills-headingFour">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseFour" aria-expanded="true" aria-controls="skills-collapseFour">
+                Logiciel de traitement
+              </button>
+            </h2>
+            <div id="skills-collapseFour" class="accordion-collapse collapse show" aria-labelledby="skills-headingFour">
+              <div class="accordion-body">
+                <div class="row g-3 justify-content-center">
+                  <img src="img/logo/logo-docs-short.svg" alt="Google Docs" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#docsModal" height="64px">
+                  <img src="img/logo/logo-slides-short.svg" alt="Google Slides" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#slidesModal" height="64px">
+                  <img src="img/logo/logo-sheets-short.svg" alt="Google Sheets" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#sheetsModal" height="64px">
+                  <img src="img/logo/logo-word-short.svg" alt="Word" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#wordModal" height="64px">
+                  <img src="img/logo/logo-powerpoint-short.svg" alt="PowerPoint" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#powerpointModal" height="64px">
+                  <img src="img/logo/logo-excel-short.svg" alt="Excel" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#excelModal" height="64px">
+                  <img src="img/logo/logo-premierPro-short.svg" alt="Premier Pro" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#premierProModal" height="64px">
+                  <img src="img/logo/logo-photoshop-short.svg" alt="Photoshop" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#photoshopModal" height="64px">
                 </div>
               </div>
             </div>
@@ -159,7 +221,7 @@
             <div class="content rounded">
               <h3> <span class="badge bg-secondary">2019</span> Baccalauréat Scientifique</h3>
               <p class="fs-5">Lycée Calmette</p>
-              <p class="text-justify"><strong>Option ISN</strong> avec Programmation en java et python, mais aussi apprentissage du html5 et css3 à part.</p>
+              <p class="text-justify"><strong>Option ISN</strong> avec de la programmation en java et python, mais aussi apprentissage du html5 et css3 à part.</p>
             </div>
           </div>
           <div class="timeline-container timeline-right">
@@ -180,12 +242,12 @@
       <h1 class="text-center fw-bold mb-5">Portfolio</h1>
       <div class="container">
         <div class="row row-cols-3 justify-content-center align-items-center g-5">
-          <div class="col-4 d-flex justify-content-center"><a href="#"><img class="img-fluid rounded ratio ratio-16x9" alt="..." src="https://via.placeholder.com/500x281.png" alt="" width="400px"></a></div>
-          <div class="col-4 d-flex justify-content-center"><a href="#"><img class="img-fluid rounded ratio ratio-16x9" alt="..." src="https://via.placeholder.com/500x281.png" alt="" width="400px"></a></div>
-          <div class="col-4 d-flex justify-content-center"><a href="#"><img class="img-fluid rounded ratio ratio-16x9" alt="..." src="https://via.placeholder.com/500x281.png" alt="" width="400px"></a></div>
-          <div class="col-4 d-flex justify-content-center"><a href="#"><img class="img-fluid rounded ratio ratio-16x9" alt="..." src="https://via.placeholder.com/500x281.png" alt="" width="400px"></a></div>
-          <div class="col-4 d-flex justify-content-center"><a href="#"><img class="img-fluid rounded ratio ratio-16x9" alt="..." src="https://via.placeholder.com/500x281.png" alt="" width="400px"></a></div>
-          <div class="col-4 d-flex justify-content-center"><a href="#"><img class="img-fluid rounded ratio ratio-16x9" alt="..." src="https://via.placeholder.com/500x281.png" alt="" width="400px"></a></div>
+          <div class="col-4 d-flex justify-content-center"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=about+me" data-bs-toggle="modal" data-bs-target="#aboutMeModal" alt="About-me" width="400px"></div>
+          <div class="col-4 d-flex justify-content-center"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=Roll20Alternative" data-bs-toggle="modal" data-bs-target="#roll20AlternativeModal" alt="Roll20Alternative" width="400px"></div>
+          <div class="col-4 d-flex justify-content-center"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=Utility-tools" data-bs-toggle="modal" data-bs-target="#utilitytoolsModal" alt="Utility-tools" width="400px"></div>
+          <div class="col-4 d-flex justify-content-center"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=WIP" data-bs-toggle="modal" data-bs-target="#wipModal" alt="WIP" width="400px"></div>
+          <div class="col-4 d-flex justify-content-center"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=WIP" data-bs-toggle="modal" data-bs-target="#wipModal" alt="WIP" width="400px"></div>
+          <div class="col-4 d-flex justify-content-center"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=WIP" data-bs-toggle="modal" data-bs-target="#wipModal" alt="WIP" width="400px"></div>
         </div>
       </div>
     </div>
