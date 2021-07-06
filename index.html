@@ -53,54 +53,57 @@
   <main>
     <div class="container-fluid bg-primary d-flex flex-column align-items-center" id="presentation">
       <h1 class="text-center col-12 fw-bold mb-5 text-light" style="display: none;">Présentation</h1>
-      <div class="container row row-cols-2 g-5 justify-content-center">
-        <div class="col-auto">
-          <div class="card" style="max-width: 30rem">
-          <img src="https://via.placeholder.com/400.png?text=Place+Holder" class="card-img-top" height="400px">
-          <div class="card-body">
-            <h2 class="card-title fs-5 fw-bold">Alexis De Chiara</h2>
-            <div class="card-text" style="text-align: justify">
-              Programmeur DevOps Fullstack, spécialisé principalement en UI et UX, je peut réaliser un site web de A à Z.
-              J'ai aussi des compétences en développement d'application Java pour Windows ou Android.
+      <div class="container row g-5 justify-content-center">
+        <div class="col-xs-12 col-md-10 col-lg-6 col-xl-5">
+          <div class="card">
+            <img src="https://via.placeholder.com/400.png?text=Place+Holder" class="card-img-top" height="400px">
+            <div class="card-body">
+              <h2 class="card-title fs-5 fw-bold">Alexis De Chiara</h2>
+              <div class="card-text" style="text-align: justify">
+                Je suis un programmeur web Fullstack, spécialisé principalement en UI et UX, je peut cependant réaliser un site web de A à Z.
+                J'ai aussi des compétences en développement d'application Java pour Windows ou Android.
+              </div>
             </div>
           </div>
         </div>
-        </div>
-        
-        <div class="col-4">
-          <div class="row row-cols-1 g-3 justify-content-center">
+  
+        <div class="col-xs-12 col-md-10 col-lg-5 col-xl-4">
+          <div class="row row-cols-1 g-3 justify-content-start mb-3">
             <div class="col">
               <div class="card">
                 <h3 class="card-header fs-5">
-                  Diplôme
+                  Diplôme actuel
                 </h3>
                 <div class="card-body">
                   DUT Informatique
                 </div>
               </div>
             </div>
-            <div class="col">
-              <div class="card">
-                <h3 class="card-header fs-5">
-                  Emploi
-                </h3>
-                <div class="card-body">
-                  Stagiaire à UBS (Monaco) S.A.
-                </div>
-              </div>
-            </div>
+          </div>
+          <div class="row row-cols-1 g-3 justify-content-start mb-3">
             <div class="col">
               <div class="card">
                 <h3 class="card-header fs-5">
                   Spécialisation
                 </h3>
                 <div class="card-body">
-                  DevOps - Fullstack
+                  Web - Fullstack
                 </div>
               </div>
             </div>
           </div>
-          
+          <div class="row row-cols-1 g-3 justify-content-start mb-3">
+            <div class="col">
+              <div class="card">
+                <h3 class="card-header fs-5">
+                  Emploi actuel
+                </h3>
+                <div class="card-body">
+                  Stagiaire à UBS (Monaco) S.A.
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -116,7 +119,7 @@
           <div class="accordion-item">
             <h2 class="accordion-header" id="skills-headingOne">
               <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapsOne" aria-expanded="true" aria-controls="skills-collapsOne">
-                Language de programmation
+                Languages de programmation
               </button>
             </h2>
             <div id="skills-collapsOne" class="accordion-collapse collapse show" aria-labelledby="skills-headingOne">
@@ -130,8 +133,19 @@
                   <img src="img/logo/logo-javascript-short.svg" alt="JavaScript" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#javascriptModal" height="64px">
                   <img src="img/logo/logo-typescript-short.svg" alt="TypeScript" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#typescriptModal" height="64px">
                   <img src="img/logo/logo-php-short.svg" alt="PHP" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#phpModal" height="64px">
-                  <img src="img/logo/logo-bash-short.svg" alt="BASH" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#bashModal" height="64px">
-                  <img src="img/logo/logo-git-short.svg" alt="git" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#gitModal" height="64px">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="skills-headingTwo">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapsTwo" aria-expanded="true" aria-controls="skills-collapsTwo">
+                Système de Gestion de Base de données
+              </button>
+            </h2>
+            <div id="skills-collapsTwo" class="accordion-collapse collapse show" aria-labelledby="skills-headingTwo">
+              <div class="accordion-body">
+                <div class="row g-3 justify-content-center">
                   <img src="img/logo/logo-access-short.svg" alt="Access" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#accessModal" height="64px">
                   <img src="img/logo/logo-mySQL-short.svg" alt="MySQL" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#mysqlModal" height="64px">
                   <img src="img/logo/logo-postgreSQL-short.svg" alt="PostgreSQL" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#postgresqlModal" height="64px">
@@ -141,12 +155,12 @@
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="skills-headingTwo">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseTwo" aria-expanded="true" aria-controls="skills-collapseTwo">
-                Framework
+            <h2 class="accordion-header" id="skills-headingThree">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseThree" aria-expanded="true" aria-controls="skills-collapseThree">
+                Frameworks
               </button>
             </h2>
-            <div id="skills-collapseTwo" class="accordion-collapse collapse show" aria-labelledby="skills-headingTwo">
+            <div id="skills-collapseThree" class="accordion-collapse collapse show" aria-labelledby="skills-headingThree">
               <div class="accordion-body">
                 <div class="row g-3 justify-content-center">
                   <img src="img/logo/logo-angular-short.svg" alt="Angular" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#angularModal" height="64px">
@@ -161,36 +175,56 @@
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="skills-headingThree">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseThree" aria-expanded="true" aria-controls="skills-collapseThree">
-                Outil de développement
+            <h2 class="accordion-header" id="skills-headingFour">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseFour" aria-expanded="true" aria-controls="skills-collapseFour">
+                Outils de gestion
               </button>
             </h2>
-            <div id="skills-collapseThree" class="accordion-collapse collapse show" aria-labelledby="skills-headingThree">
+            <div id="skills-collapseFour" class="accordion-collapse collapse show" aria-labelledby="skills-headingFour">
               <div class="accordion-body">
                 <div class="row g-3 justify-content-center">
-                  <img src="img/logo/logo-figma-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#figmaModal" height="64px">
+                  <img src="img/logo/logo-git-short.svg" alt="git" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#gitModal" height="64px">
+                  <img src="img/logo/logo-gitKraken-short.svg" alt="gitKraken" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#gitKrakenModal" height="64px">
                   <img src="img/logo/logo-gitHub-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#gitHubModal" height="64px">
                   <img src="img/logo/logo-gitLab-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#gitLabModal" height="64px">
                   <img src="img/logo/logo-confluence-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#confluenceModal" height="64px">
                   <img src="img/logo/logo-jira-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#jiraModal" height="64px">
                   <img src="img/logo/logo-trello-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#trelloModal" height="64px">
-                  <img src="img/logo/logo-eclipse-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#eclipseModal" height="64px">
-                  <img src="img/logo/logo-intelij-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#intelijModal" height="64px">
-                  <img src="img/logo/logo-visualStudio-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#visualStudioModal" height="64px">
-                  <img src="img/logo/logo-visualStudioCode-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#visualStudioCodeModal" height="64px">
-                  <img src="img/logo/logo-atom-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#atomModal" height="64px">
                 </div>
               </div>
             </div>
           </div>
           <div class="accordion-item">
-            <h2 class="accordion-header" id="skills-headingFour">
-              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseFour" aria-expanded="true" aria-controls="skills-collapseFour">
-                Logiciel de traitement
+            <h2 class="accordion-header" id="skills-headingFive">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseFive" aria-expanded="true" aria-controls="skills-collapseFive">
+                Outils de développement et de conception
               </button>
             </h2>
-            <div id="skills-collapseFour" class="accordion-collapse collapse show" aria-labelledby="skills-headingFour">
+            <div id="skills-collapseFive" class="accordion-collapse collapse show" aria-labelledby="skills-headingFive">
+              <div class="accordion-body">
+                <div class="row g-3 justify-content-center">
+                  <img src="img/logo/logo-figma-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#figmaModal" height="64px">
+                  <img src="img/logo/logo-eclipse-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#eclipseModal" height="64px">
+                  <img src="img/logo/logo-intelij-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#intelijModal" height="64px">
+                  <img src="img/logo/logo-visualStudio-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#visualStudioModal" height="64px">
+                  <img src="img/logo/logo-visualStudioCode-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#visualStudioCodeModal" height="64px">
+                  <img src="img/logo/logo-atom-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#atomModal" height="64px">
+                  <img src="img/logo/logo-bash-short.svg" alt="BASH" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#bashModal" height="64px">
+                  <img src="img/logo/logo-npm-short.svg" alt="npm" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#npmModal" height="64px">
+                  <img src="img/logo/logo-laragon-short.svg" alt="npm" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#laragonModal" height="64px">
+                  <img src="img/logo/logo-maven-short.svg" alt="Maven" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#mavenModal" height="64px">
+                  <img src="img/logo/logo-apache-short.svg" alt="Apache" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#apacheModal" height="64px">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="skills-headingSix">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseSix" aria-expanded="true" aria-controls="skills-collapseSix">
+                Logiciels de traitement
+              </button>
+            </h2>
+            <div id="skills-collapseSix" class="accordion-collapse collapse show" aria-labelledby="skills-headingSix">
               <div class="accordion-body">
                 <div class="row g-3 justify-content-center">
                   <img src="img/logo/logo-docs-short.svg" alt="Google Docs" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#docsModal" height="64px">
@@ -241,13 +275,13 @@
     <div class="container-fluid" id="portfolio">
       <h1 class="text-center fw-bold mb-5">Portfolio</h1>
       <div class="container">
-        <div class="row row-cols-3 justify-content-center align-items-center g-5">
-          <div class="col-4 d-flex justify-content-center"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=about+me" data-bs-toggle="modal" data-bs-target="#aboutMeModal" alt="About-me" width="400px"></div>
-          <div class="col-4 d-flex justify-content-center"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=Roll20Alternative" data-bs-toggle="modal" data-bs-target="#roll20AlternativeModal" alt="Roll20Alternative" width="400px"></div>
-          <div class="col-4 d-flex justify-content-center"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=Utility-tools" data-bs-toggle="modal" data-bs-target="#utilitytoolsModal" alt="Utility-tools" width="400px"></div>
-          <div class="col-4 d-flex justify-content-center"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=WIP" data-bs-toggle="modal" data-bs-target="#wipModal" alt="WIP" width="400px"></div>
-          <div class="col-4 d-flex justify-content-center"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=WIP" data-bs-toggle="modal" data-bs-target="#wipModal" alt="WIP" width="400px"></div>
-          <div class="col-4 d-flex justify-content-center"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=WIP" data-bs-toggle="modal" data-bs-target="#wipModal" alt="WIP" width="400px"></div>
+        <div class="row justify-content-center align-items-center g-5">
+          <div class="col-xs-12 col-sm-6 col-md-4 d-flex justify-content-center"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=about+me" data-bs-toggle="modal" data-bs-target="#aboutMeModal" alt="About-me"></div>
+          <div class="col-xs-12 col-sm-6 col-md-4 d-flex justify-content-center"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=Roll20Alternative" data-bs-toggle="modal" data-bs-target="#roll20AlternativeModal" alt="Roll20Alternative"></div>
+          <div class="cocol-xs-12 col-sm-6 col-md-4 d-flex justify-content-centerr"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=Utility-tools" data-bs-toggle="modal" data-bs-target="#utilitytoolsModal" alt="Utility-tools"></div>
+          <div class="cocol-xs-12 col-sm-6 col-md-4 d-flex justify-content-centerr"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=WIP" data-bs-toggle="modal" data-bs-target="#wipModal" alt="WIP" ></div>
+          <div class="cocol-xs-12 col-sm-6 col-md-4 d-flex justify-content-centerr"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=WIP" data-bs-toggle="modal" data-bs-target="#wipModal" alt="WIP"></div>
+          <div class="cocol-xs-12 col-sm-6 col-md-4 d-flex justify-content-centerr"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=WIP" data-bs-toggle="modal" data-bs-target="#wipModal" alt="WIP"></div>
         </div>
       </div>
     </div>
@@ -285,7 +319,7 @@
         <div class="row justify-content-center g-5">
           <!--
           <div class="col-auto">
-            <a href="mailto:alexis.de-chiara@hotmail.fr" class="d-flex flex-column text-decoration-none text-light text-wrap">
+            <a href="" class="d-flex flex-column text-decoration-none text-light text-wrap">
               <i class="bi bi-envelope-fill fs-1 align-self-center"></i>
               <span class="fs-4 align-self-center">Courriel</span>
             </a>
@@ -321,14 +355,14 @@
   </main>
   <footer>
     <div class="container-fluid bg-dark text-light text-center p-3">
-      <div class="row row-cols-3">
-        <div class="col-3 text-start">
+      <div class="row">
+        <div class="col-xs-12 col-md-3 text-md-start">
           Site sous license MIT
         </div>
-        <div class="col-6 text-center" id="realised">
+        <div class="col-xs-12 col-md-6 text-md-center" id="realised">
           Réalisé par&nbsp
         </div>
-        <div class="col-3 text-end">
+        <div class="col-xs-12 col-md-3 text-md-end">
           version 1.0
         </div>
       </div>
