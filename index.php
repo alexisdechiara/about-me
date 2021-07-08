@@ -23,13 +23,13 @@
   <!-- Icons -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  
+
   <!-- Personnals files -->
-  <link rel="stylesheet" href="style/main.css">
-  <script src="js/main.js" defer></script>
+  <link rel="stylesheet" href="assets/css/main.css">
+  <script src="assets/js/main.js" defer></script>
 
   <title>Alexis De Chiara</title>
-  
+
 </head>
 <body>
   <header class="bg-primary">
@@ -52,11 +52,11 @@
   </header>
   <main>
     <div class="container-fluid bg-primary d-flex flex-column align-items-center" id="presentation">
-      <h1 class="text-center col-12 fw-bold mb-5 text-light" style="display: none;">Présentation</h1>
+      <h1 class="text-center col-12 fw-bold mb-5 text-light">Présentation</h1>
       <div class="container row g-5 justify-content-center">
         <div class="col-xs-12 col-md-10 col-lg-6 col-xl-5">
           <div class="card">
-            <img src="https://via.placeholder.com/400.png?text=Place+Holder" class="card-img-top" height="400px">
+            <img src="https://via.placeholder.com/400.png?text=Place+Holder" class="card-img-top" height="400px" alt="Image de profil">
             <div class="card-body">
               <h2 class="card-title fs-5 fw-bold">Alexis De Chiara</h2>
               <div class="card-text" style="text-align: justify">
@@ -66,7 +66,7 @@
             </div>
           </div>
         </div>
-  
+
         <div class="col-xs-12 col-md-10 col-lg-5 col-xl-4">
           <div class="row row-cols-1 g-3 justify-content-start mb-3">
             <div class="col">
@@ -122,17 +122,17 @@
                 Languages de programmation
               </button>
             </h2>
-            <div id="skills-collapsOne" class="accordion-collapse collapse show" aria-labelledby="skills-headingOne">
+              <div id="skills-collapsOne" class="accordion-collapse collapse show" aria-labelledby="skills-headingOne">
               <div class="accordion-body">
                 <div class="row g-3 justify-content-center">
-                  <img src="img/logo/logo-java-short.svg" alt="Java" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#javaModal" height="64px">
-                  <img src="img/logo/logo-c-short.svg" alt="C" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#cModal" height="64px">
-                  <img src="img/logo/logo-cSharp-short.svg" alt="C#" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#cSharpModal" height="64px">
-                  <img src="img/logo/logo-html-medium.svg" alt="HTML5" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#htmlModal" height="64px">
-                  <img src="img/logo/logo-css-medium.svg" alt="CSS3" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#cssModal" height="64px">
-                  <img src="img/logo/logo-javascript-short.svg" alt="JavaScript" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#javascriptModal" height="64px">
-                  <img src="img/logo/logo-typescript-short.svg" alt="TypeScript" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#typescriptModal" height="64px">
-                  <img src="img/logo/logo-php-short.svg" alt="PHP" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#phpModal" height="64px">
+                  <img src="assets/img/logo/logo-java-short.svg" alt="Java" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#javaModal" height="64px">
+                  <img src="assets/img/logo/logo-c-short.svg" alt="C" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#cModal" height="64px">
+                  <img src="assets/img/logo/logo-cSharp-short.svg" alt="C#" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#cSharpModal" height="64px">
+                  <img src="assets/img/logo/logo-html-medium.svg" alt="HTML5" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#htmlModal" height="64px">
+                  <img src="assets/img/logo/logo-css-medium.svg" alt="CSS3" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#cssModal" height="64px">
+                  <img src="assets/img/logo/logo-javascript-short.svg" alt="JavaScript" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#javascriptModal" height="64px">
+                  <img src="assets/img/logo/logo-typescript-short.svg" alt="TypeScript" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#typescriptModal" height="64px">
+                  <img src="assets/img/logo/logo-php-short.svg" alt="PHP" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#phpModal" height="64px">
                 </div>
               </div>
             </div>
@@ -146,10 +146,10 @@
             <div id="skills-collapsTwo" class="accordion-collapse collapse show" aria-labelledby="skills-headingTwo">
               <div class="accordion-body">
                 <div class="row g-3 justify-content-center">
-                  <img src="img/logo/logo-access-short.svg" alt="Access" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#accessModal" height="64px">
-                  <img src="img/logo/logo-mySQL-short.svg" alt="MySQL" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#mysqlModal" height="64px">
-                  <img src="img/logo/logo-postgreSQL-short.svg" alt="PostgreSQL" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#postgresqlModal" height="64px">
-                  <img src="img/logo/logo-oracle-short.svg" alt="Oracle Database" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#oracledatabaseModal" height="64px">
+                  <img src="assets/img/logo/logo-access-short.svg" alt="Access" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#accessModal" height="64px">
+                  <img src="assets/img/logo/logo-mySQL-short.svg" alt="MySQL" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#mysqlModal" height="64px">
+                  <img src="assets/img/logo/logo-postgreSQL-short.svg" alt="PostgreSQL" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#postgresqlModal" height="64px">
+                  <img src="assets/img/logo/logo-oracle-short.svg" alt="Oracle Database" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#oracledatabaseModal" height="64px">
                 </div>
               </div>
             </div>
@@ -163,13 +163,13 @@
             <div id="skills-collapseThree" class="accordion-collapse collapse show" aria-labelledby="skills-headingThree">
               <div class="accordion-body">
                 <div class="row g-3 justify-content-center">
-                  <img src="img/logo/logo-angular-short.svg" alt="Angular" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#angularModal" height="64px">
-                  <img src="img/logo/logo-laravel-short.svg" alt="Laravel" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#laravelModal" height="64px">
-                  <img src="img/logo/logo-symfony-short.svg" alt="Symfony" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#symfonyModal" height="64px">
-                  <img src="img/logo/logo-spring-short.svg" alt="Spring" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#springModal" height="64px">
-                  <img src="img/logo/logo-hibernate-short.svg" alt="Hibernate" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#hibernateModal" height="64px">
-                  <img src="img/logo/logo-bootstrap-short.svg" alt="Bootstrap" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#bootstrapModal" height="64px">
-                  <img src="img/logo/logo-material-short.svg" alt="Material" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#materialModal" height="64px">
+                  <img src="assets/img/logo/logo-angular-short.svg" alt="Angular" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#angularModal" height="64px">
+                  <img src="assets/img/logo/logo-laravel-short.svg" alt="Laravel" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#laravelModal" height="64px">
+                  <img src="assets/img/logo/logo-symfony-short.svg" alt="Symfony" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#symfonyModal" height="64px">
+                  <img src="assets/img/logo/logo-spring-short.svg" alt="Spring" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#springModal" height="64px">
+                  <img src="assets/img/logo/logo-hibernate-short.svg" alt="Hibernate" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#hibernateModal" height="64px">
+                  <img src="assets/img/logo/logo-bootstrap-short.svg" alt="Bootstrap" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#bootstrapModal" height="64px">
+                  <img src="assets/img/logo/logo-material-short.svg" alt="Material" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#materialModal" height="64px">
                 </div>
               </div>
             </div>
@@ -183,13 +183,13 @@
             <div id="skills-collapseFour" class="accordion-collapse collapse show" aria-labelledby="skills-headingFour">
               <div class="accordion-body">
                 <div class="row g-3 justify-content-center">
-                  <img src="img/logo/logo-git-short.svg" alt="git" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#gitModal" height="64px">
-                  <img src="img/logo/logo-gitKraken-short.svg" alt="gitKraken" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#gitKrakenModal" height="64px">
-                  <img src="img/logo/logo-gitHub-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#gitHubModal" height="64px">
-                  <img src="img/logo/logo-gitLab-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#gitLabModal" height="64px">
-                  <img src="img/logo/logo-confluence-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#confluenceModal" height="64px">
-                  <img src="img/logo/logo-jira-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#jiraModal" height="64px">
-                  <img src="img/logo/logo-trello-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#trelloModal" height="64px">
+                  <img src="assets/img/logo/logo-git-short.svg" alt="git" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#gitModal" height="64px">
+                  <img src="assets/img/logo/logo-gitKraken-short.svg" alt="gitKraken" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#gitKrakenModal" height="64px">
+                  <img src="assets/img/logo/logo-gitHub-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#gitHubModal" height="64px">
+                  <img src="assets/img/logo/logo-gitLab-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#gitLabModal" height="64px">
+                  <img src="assets/img/logo/logo-confluence-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#confluenceModal" height="64px">
+                  <img src="assets/img/logo/logo-jira-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#jiraModal" height="64px">
+                  <img src="assets/img/logo/logo-trello-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#trelloModal" height="64px">
                 </div>
               </div>
             </div>
@@ -203,17 +203,17 @@
             <div id="skills-collapseFive" class="accordion-collapse collapse show" aria-labelledby="skills-headingFive">
               <div class="accordion-body">
                 <div class="row g-3 justify-content-center">
-                  <img src="img/logo/logo-figma-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#figmaModal" height="64px">
-                  <img src="img/logo/logo-eclipse-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#eclipseModal" height="64px">
-                  <img src="img/logo/logo-intelij-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#intelijModal" height="64px">
-                  <img src="img/logo/logo-visualStudio-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#visualStudioModal" height="64px">
-                  <img src="img/logo/logo-visualStudioCode-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#visualStudioCodeModal" height="64px">
-                  <img src="img/logo/logo-atom-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#atomModal" height="64px">
-                  <img src="img/logo/logo-bash-short.svg" alt="BASH" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#bashModal" height="64px">
-                  <img src="img/logo/logo-npm-short.svg" alt="npm" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#npmModal" height="64px">
-                  <img src="img/logo/logo-laragon-short.svg" alt="npm" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#laragonModal" height="64px">
-                  <img src="img/logo/logo-maven-short.svg" alt="Maven" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#mavenModal" height="64px">
-                  <img src="img/logo/logo-apache-short.svg" alt="Apache" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#apacheModal" height="64px">
+                  <img src="assets/img/logo/logo-figma-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#figmaModal" height="64px">
+                  <img src="assets/img/logo/logo-eclipse-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#eclipseModal" height="64px">
+                  <img src="assets/img/logo/logo-intelij-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#intelijModal" height="64px">
+                  <img src="assets/img/logo/logo-visualStudio-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#visualStudioModal" height="64px">
+                  <img src="assets/img/logo/logo-visualStudioCode-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#visualStudioCodeModal" height="64px">
+                  <img src="assets/img/logo/logo-atom-short.svg" alt="Figma" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#atomModal" height="64px">
+                  <img src="assets/img/logo/logo-bash-short.svg" alt="BASH" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#bashModal" height="64px">
+                  <img src="assets/img/logo/logo-npm-short.svg" alt="npm" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#npmModal" height="64px">
+                  <img src="assets/img/logo/logo-laragon-short.svg" alt="npm" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#laragonModal" height="64px">
+                  <img src="assets/img/logo/logo-maven-short.svg" alt="Maven" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#mavenModal" height="64px">
+                  <img src="assets/img/logo/logo-apache-short.svg" alt="Apache" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#apacheModal" height="64px">
                 </div>
               </div>
             </div>
@@ -227,21 +227,21 @@
             <div id="skills-collapseSix" class="accordion-collapse collapse show" aria-labelledby="skills-headingSix">
               <div class="accordion-body">
                 <div class="row g-3 justify-content-center">
-                  <img src="img/logo/logo-docs-short.svg" alt="Google Docs" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#docsModal" height="64px">
-                  <img src="img/logo/logo-slides-short.svg" alt="Google Slides" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#slidesModal" height="64px">
-                  <img src="img/logo/logo-sheets-short.svg" alt="Google Sheets" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#sheetsModal" height="64px">
-                  <img src="img/logo/logo-word-short.svg" alt="Word" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#wordModal" height="64px">
-                  <img src="img/logo/logo-powerpoint-short.svg" alt="PowerPoint" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#powerpointModal" height="64px">
-                  <img src="img/logo/logo-excel-short.svg" alt="Excel" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#excelModal" height="64px">
-                  <img src="img/logo/logo-premierPro-short.svg" alt="Premier Pro" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#premierProModal" height="64px">
-                  <img src="img/logo/logo-photoshop-short.svg" alt="Photoshop" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#photoshopModal" height="64px">
+                  <img src="assets/img/logo/logo-docs-short.svg" alt="Google Docs" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#docsModal" height="64px">
+                  <img src="assets/img/logo/logo-slides-short.svg" alt="Google Slides" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#slidesModal" height="64px">
+                  <img src="assets/img/logo/logo-sheets-short.svg" alt="Google Sheets" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#sheetsModal" height="64px">
+                  <img src="assets/img/logo/logo-word-short.svg" alt="Word" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#wordModal" height="64px">
+                  <img src="assets/img/logo/logo-powerpoint-short.svg" alt="PowerPoint" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#powerpointModal" height="64px">
+                  <img src="assets/img/logo/logo-excel-short.svg" alt="Excel" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#excelModal" height="64px">
+                  <img src="assets/img/logo/logo-premierPro-short.svg" alt="Premier Pro" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#premierProModal" height="64px">
+                  <img src="assets/img/logo/logo-photoshop-short.svg" alt="Photoshop" class="col-auto zoom clickable" data-bs-toggle="modal" data-bs-target="#photoshopModal" height="64px">
                 </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-     
+
     </div>
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path fill="#dc3545" fill-opacity="1"
@@ -276,12 +276,12 @@
       <h1 class="text-center fw-bold mb-5">Portfolio</h1>
       <div class="container">
         <div class="row justify-content-center align-items-center g-5">
-          <div class="col-xs-12 col-sm-6 col-md-4 d-flex justify-content-center"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=about+me" data-bs-toggle="modal" data-bs-target="#aboutMeModal" alt="About-me"></div>
-          <div class="col-xs-12 col-sm-6 col-md-4 d-flex justify-content-center"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=Roll20Alternative" data-bs-toggle="modal" data-bs-target="#roll20AlternativeModal" alt="Roll20Alternative"></div>
-          <div class="cocol-xs-12 col-sm-6 col-md-4 d-flex justify-content-centerr"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=Utility-tools" data-bs-toggle="modal" data-bs-target="#utilitytoolsModal" alt="Utility-tools"></div>
-          <div class="cocol-xs-12 col-sm-6 col-md-4 d-flex justify-content-centerr"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=WIP" data-bs-toggle="modal" data-bs-target="#wipModal" alt="WIP" ></div>
-          <div class="cocol-xs-12 col-sm-6 col-md-4 d-flex justify-content-centerr"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=WIP" data-bs-toggle="modal" data-bs-target="#wipModal" alt="WIP"></div>
-          <div class="cocol-xs-12 col-sm-6 col-md-4 d-flex justify-content-centerr"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" alt="..." src="https://via.placeholder.com/500x281.png?text=WIP" data-bs-toggle="modal" data-bs-target="#wipModal" alt="WIP"></div>
+          <div class="col-xs-12 col-sm-6 col-md-4 d-flex justify-content-center"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" src="https://via.placeholder.com/500x281.png?text=about+me" data-bs-toggle="modal" data-bs-target="#aboutMeModal" alt="About-me"></div>
+          <div class="col-xs-12 col-sm-6 col-md-4 d-flex justify-content-center"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" src="https://via.placeholder.com/500x281.png?text=Roll20Alternative" data-bs-toggle="modal" data-bs-target="#roll20AlternativeModal" alt="Roll20Alternative"></div>
+          <div class="cocol-xs-12 col-sm-6 col-md-4 d-flex justify-content-centerr"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" src="https://via.placeholder.com/500x281.png?text=Utility-tools" data-bs-toggle="modal" data-bs-target="#utilitytoolsModal" alt="Utility-tools"></div>
+          <div class="cocol-xs-12 col-sm-6 col-md-4 d-flex justify-content-centerr"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" src="https://via.placeholder.com/500x281.png?text=WIP" data-bs-toggle="modal" data-bs-target="#wipModal" alt="WIP" ></div>
+          <div class="cocol-xs-12 col-sm-6 col-md-4 d-flex justify-content-centerr"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" src="https://via.placeholder.com/500x281.png?text=WIP" data-bs-toggle="modal" data-bs-target="#wipModal" alt="WIP"></div>
+          <div class="cocol-xs-12 col-sm-6 col-md-4 d-flex justify-content-centerr"><img class="img-fluid rounded ratio ratio-16x9 portfolio-img" src="https://via.placeholder.com/500x281.png?text=WIP" data-bs-toggle="modal" data-bs-target="#wipModal" alt="WIP"></div>
         </div>
       </div>
     </div>
@@ -309,7 +309,7 @@
           </div>
           <div class="mb-3">
             <label for="email-message" class="form-label">Message</label>
-            <textarea class="form-control" id="email-name" rows="5"></textarea>
+            <textarea class="form-control" id="email-message" rows="5"></textarea>
           </div>
           <div class=" d-grid mb-3">
             <button type="submit" class="btn btn-primary">Submit</button>
@@ -372,7 +372,7 @@
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
 
-  <!--<?php include "./html/modals.html" ?>-->
+  <?php include "assets/html/modals.html" ?>
 </body>
 
 </html>
