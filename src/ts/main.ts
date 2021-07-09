@@ -1,11 +1,9 @@
-const metas = document.getElementsByTagName('meta');
-
-let isDarkMode = false;
+let start = performance.now();
+window.onload = () =>{
+    let end = performance.now();
+    console.log("Page chargée en " + Math.round(end-start)/1000 + " secondes");
+}
 window.addEventListener("scroll", updateNav);
-document.getElementById('darkButton').addEventListener("click", toggleDarkMode);
-
-document.getElementById('realised').innerText += getMeta("author");
-
 function updateNav(): void {
     const presentation = document.getElementById('presentation');
     const skills = document.getElementById('skills');
@@ -67,35 +65,8 @@ function removeColors(e: Element):void {
 }
 
 function removeActiveLink():void {
-
     let actives = document.querySelectorAll('.active');
     [].forEach.call(actives, function (e: Element) {
         e.classList.remove("active");
     });
-}
-
-function toggleDarkMode():void {
-    let light = document.getElementById('light-style');
-    let dark = document.getElementById('dark-style');
-    if (!isDarkMode) {
-        light.setAttribute("disabled", "true");
-        dark.setAttribute("media", "(prefers-color-scheme: light)");
-        isDarkMode = true;
-    } else {
-        light.setAttribute("disabled", "false");
-        dark.setAttribute("media", "(prefers-color-scheme: dark)");
-        isDarkMode = false;
-    }
-}
-
-function getMeta(metaName):string {
-    const metas = document.getElementsByTagName('meta');
-
-    for (let i = 0; i < metas.length; i++) {
-        if (metas[i].getAttribute('name') === metaName) {
-            return metas[i].getAttribute('content');
-        }
-    }
-
-    return '';
 }
