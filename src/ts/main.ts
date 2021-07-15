@@ -4,6 +4,14 @@ window.onload = () =>{
     console.log("Page chargée en " + Math.round(end-start)/1000 + " secondes");
 }
 window.addEventListener("scroll", updateNav);
+fetch("assets/html/modals.html")
+    .then(response => {
+        return response.text()
+    })
+    .then(data => {
+        document.body.innerHTML += data;
+    });
+
 function updateNav(): void {
     const presentation = document.getElementById('presentation');
     const skills = document.getElementById('skills');

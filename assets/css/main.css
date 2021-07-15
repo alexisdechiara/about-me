@@ -18,7 +18,6 @@ footer > .container-fluid {
 .zoom {
   transition: transform 0.25s;
 }
-
 .zoom:hover {
   transform: scale(1.25);
 }
@@ -34,7 +33,6 @@ footer > .container-fluid {
 .portfolio-img {
   transition: 0.25s;
 }
-
 .portfolio-img:hover {
   cursor: pointer;
   transform: scale(1.1);
