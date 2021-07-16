@@ -22,7 +22,7 @@ function updateNav(): void {
 
     if (presentation.getBoundingClientRect().bottom > (window.innerWidth/7) * -1) {
         removeColors(nav);
-        nav.classList.add("bg-primary");
+        nav.classList.add("bg-blue");
         nav.classList.add("navbar-dark");
         removeActiveLink();
         document.getElementById('presentation-link').classList.add("active");
@@ -34,7 +34,7 @@ function updateNav(): void {
         document.getElementById('skills-link').classList.add("active");
     } else if (career.getBoundingClientRect().bottom > (window.innerWidth / 7) * -1) {
         removeColors(nav);
-        nav.classList.add("bg-danger");
+        nav.classList.add("bg-red");
         nav.classList.add("navbar-dark");
         removeActiveLink();
         document.getElementById('career-link').classList.add("active");
@@ -46,7 +46,7 @@ function updateNav(): void {
         document.getElementById('portfolio-link').classList.add("active");
     } else {
         removeColors(nav);
-        nav.classList.add("bg-dark");
+        nav.classList.add("bg-gray-900");
         nav.classList.add("navbar-dark");
         removeActiveLink();
         document.getElementById('contact-link').classList.add("active");
@@ -54,6 +54,9 @@ function updateNav(): void {
 }
 
 function removeColors(e: Element):void {
+    e.classList.remove("bg-blue");
+    e.classList.remove("bg-red");
+    e.classList.remove("bg-gray-900");
     e.classList.remove("bg-primary");
     e.classList.remove("bg-secondary");
     e.classList.remove("bg-danger");

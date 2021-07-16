@@ -1,9 +1,23 @@
-  .form-control:focus {
+@import "variables";
+
+.form-control:focus {
   outline: 0 !important;
   -webkit-box-shadow: none !important;
   box-shadow: none !important;
 }
 
-  .btn:focus {
-    outline: 0 !important;
-  }
+.btn:focus {
+  outline: 0 !important;
+}
+
+.bg-blue{
+  background-color: $blue;
+}
+
+.bg-red{
+  background-color: $red;
+}
+
+.bg-gray-900{
+  background-color: $gray-900;
+}

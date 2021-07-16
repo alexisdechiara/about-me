@@ -15,6 +15,11 @@ footer > .container-fluid {
   padding-top: 112px;
 }
 
+.reverse {
+  margin-top: -1px;
+  transform: rotate(180deg);
+}
+
 .zoom {
   transition: transform 0.25s;
 }
@@ -40,6 +45,18 @@ footer > .container-fluid {
 
 .blockquote-footer {
   margin-bottom: 0;
+}
+
+.wave-blue {
+  fill: #2E5EFF;
+}
+
+.wave-red {
+  fill: #ee2f3f;
+}
+
+.wave-gray-900 {
+  fill: #212529;
 }
 
 /* The actual timeline (the vertical ruler) */

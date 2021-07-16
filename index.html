@@ -24,8 +24,8 @@
     <title>Alexis De Chiara</title>
 </head>
 <body>
-<header class="bg-primary">
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-primary" id="navigation">
+<header class="bg-blue">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-blue" id="navigation">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#toggler" aria-controls="toggler" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -43,7 +43,7 @@
     </nav>
 </header>
 <main>
-    <div class="container-fluid bg-primary d-flex flex-column align-items-center" id="presentation">
+    <div class="container-fluid bg-blue d-flex flex-column align-items-center" id="presentation">
         <h1 class="text-center col-12 fw-bold mb-5 text-light">Présentation</h1>
         <div class="container row g-5 justify-content-center">
             <div class="col-xs-12 col-md-10 col-lg-6 col-xl-5">
@@ -98,8 +98,8 @@
             </div>
         </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="transform:rotate(180deg);margin-top:-1px;">
-        <path fill="#0d6efd" fill-opacity="1"
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="reverse">
+        <path class="wave-blue" fill-opacity="1"
               d="M0,192L60,208C120,224,240,256,360,229.3C480,203,600,117,720,106.7C840,96,960,160,1080,165.3C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
         </path>
     </svg>
@@ -235,11 +235,11 @@
         </div>
     </div>
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-        <path fill="#dc3545" fill-opacity="1"
+        <path class="wave-red" fill="#dc3545" fill-opacity="1"
               d="M0,192L60,202.7C120,213,240,235,360,213.3C480,192,600,128,720,117.3C840,107,960,149,1080,138.7C1200,128,1320,64,1380,32L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
         </path>
     </svg>
-    <div class="container-fluid bg-danger" id="career">
+    <div class="container-fluid bg-red" id="career">
         <h1 class="text-center text-light fw-bold mb-5">Carrière</h1>
         <div class="container timeline py-5">
             <div class="timeline-container timeline-left">
@@ -266,9 +266,9 @@
         </div>
     </div>
     <svg height="100%" width="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
-        <path
-                d="M 0,400 C 0,400 0,200 0,200 C 104.21052631578951,178.57416267942585 208.42105263157902,157.14832535885168 306,169 C 403.578947368421,180.85167464114832 494.52631578947353,225.98086124401914 585,223 C 675.4736842105265,220.01913875598086 765.4736842105265,168.92822966507177 859,168 C 952.5263157894735,167.07177033492823 1049.578947368421,216.3062200956938 1147,230 C 1244.421052631579,243.6937799043062 1342.2105263157896,221.8468899521531 1440,200 C 1440,200 1440,400 1440,400 Z"
-                stroke="none" stroke-width="0" fill="#dc3545ff" class="transition-all duration-300 ease-in-out delay-150" transform="rotate(-180 720 200)"></path>
+        <path d="M 0,400 C 0,400 0,200 0,200 C 104.21052631578951,178.57416267942585 208.42105263157902,157.14832535885168 306,169 C 403.578947368421,180.85167464114832 494.52631578947353,225.98086124401914 585,223 C 675.4736842105265,220.01913875598086 765.4736842105265,168.92822966507177 859,168 C 952.5263157894735,167.07177033492823 1049.578947368421,216.3062200956938 1147,230 C 1244.421052631579,243.6937799043062 1342.2105263157896,221.8468899521531 1440,200 C 1440,200 1440,400 1440,400 Z"
+              stroke="none" stroke-width="0" fill="#dc3545ff" class="wave-red transition-all duration-300 ease-in-out delay-150" transform="rotate(-180 720 200)">
+        </path>
     </svg>
     <div class="container-fluid" id="portfolio">
         <h1 class="text-center fw-bold mb-5">Portfolio</h1>
@@ -284,10 +284,11 @@
         </div>
     </div>
     <svg height="100%" width="100%" id="svg" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
-        <path d="M 0,400 C 0,400 0,200 0,200 C 93.64285714285714,175.03571428571428 187.28571428571428,150.07142857142858 292,174 C 396.7142857142857,197.92857142857142 512.5,270.75 655,263 C 797.5,255.25 966.7142857142858,166.92857142857142 1102,143 C 1237.2857142857142,119.07142857142858 1338.642857142857,159.53571428571428 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#212529ff" class="transition-all duration-300 ease-in-out delay-150">
+        <path
+               d="M 0,400 C 0,400 0,200 0,200 C 93.64285714285714,175.03571428571428 187.28571428571428,150.07142857142858 292,174 C 396.7142857142857,197.92857142857142 512.5,270.75 655,263 C 797.5,255.25 966.7142857142858,166.92857142857142 1102,143 C 1237.2857142857142,119.07142857142858 1338.642857142857,159.53571428571428 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#212529ff" class="wave-gray-900 transition-all duration-300 ease-in-out delay-150">
         </path>
     </svg>
-    <div class="container-fluid bg-dark text-light row justify-content-center" id="contact" style="margin:0">
+    <div class="container-fluid bg-dark text-light row justify-content-center m-0" id="contact">
         <h1 class="col-12 text-center fw-bold">Contact</h1>
         <!--
         <form class="row" method="POST" style="width: 750px;">
@@ -345,16 +346,16 @@
     </div>
 </main>
 <footer>
-    <div class="container-fluid bg-dark text-light text-center p-3">
+    <div class="container-fluid bg-gray-900 text-light text-center p-3">
         <div class="row">
             <div class="col-xs-12 col-md-3 text-md-start">
-                © 2021 Tous droits réservés
+                Site sous lincence MIT
             </div>
             <div class="col-xs-12 col-md-6 text-md-center">
                 Réalisé par Alexis De Chiara
             </div>
             <div class="col-xs-12 col-md-3 text-md-end">
-                version 1.0
+                Version 1.0
             </div>
         </div>
     </div>
