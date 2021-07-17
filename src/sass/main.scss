@@ -1,11 +1,27 @@
 @import "./bootstrap/variables";
 
-body {
-  overflow-x: hidden;
+*::-webkit-scrollbar{
+  width: 12px;
 }
 
-header{
-  height: 56px;
+*::-webkit-scrollbar-track{
+  border-radius: 8px;
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb{
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-color: $gray-400;
+    &:hover{
+      background-color: $gray-300;
+    }
+}
+
+
+body {
+  overflow-x: hidden;
+  overflow: overlay;
 }
 
 main>.container-fluid{
@@ -15,6 +31,14 @@ main>.container-fluid{
 
 footer > .container-fluid{
   padding-top: 112px;
+}
+
+.scroll-below{
+  background-color: rgb(255,255,255,.1);
+  transition: .25s;
+  &:hover{
+    transform: translateY(-4px);
+  }
 }
 
 .reverse{

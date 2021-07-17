@@ -1,9 +1,24 @@
-body {
-  overflow-x: hidden;
+*::-webkit-scrollbar {
+  width: 12px;
 }
 
-header {
-  height: 56px;
+*::-webkit-scrollbar-track {
+  border-radius: 8px;
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-color: #ced4da;
+}
+*::-webkit-scrollbar-thumb:hover {
+  background-color: #dee2e6;
+}
+
+body {
+  overflow-x: hidden;
+  overflow: overlay;
 }
 
 main > .container-fluid {
@@ -13,6 +28,14 @@ main > .container-fluid {
 
 footer > .container-fluid {
   padding-top: 112px;
+}
+
+.scroll-below {
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: 0.3s;
+}
+.scroll-below:hover {
+  transform: translateY(-4px);
 }
 
 .reverse {
