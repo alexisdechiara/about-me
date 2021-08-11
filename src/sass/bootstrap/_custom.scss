@@ -21,3 +21,61 @@
 .bg-gray-900{
   background-color: $gray-900;
 }
+
+.darkmode-enabled{
+  &.bg-body{
+    background-color: $black !important;
+    &.modal-content{
+      background-color: $dark !important;
+    }
+  }
+  &.bg-light{
+    background-color: $dark !important;
+     &.figure{
+      background-color: $gray-800 !important;
+    }
+  }
+  &.text-dark{
+    color: $gray-300 !important;
+  }
+  &.text-light{
+    color: $gray-300 !important;
+  }
+  &.blockquote-footer{
+    color: $gray-500 !important;
+  }
+  &.accordion-button{
+    color: $light !important;
+    background-color: $gray-800 !important;
+  }
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  .darkmode-auto{
+    &.bg-body{
+      background-color: $black !important;
+      &.modal-content{
+        background-color: $dark !important;
+      }
+    }
+    &.bg-light{
+      background-color: $dark !important;
+      &.figure{
+        background-color: $gray-800 !important;
+      }
+    }
+    &.text-dark{
+      color: $gray-300 !important;
+    }
+    &.text-light{
+      color: $gray-300 !important;
+    }
+    &.blockquote-footer{
+      color: $gray-500 !important;
+    }
+    &.accordion-button{
+      color: $light !important;
+      background-color: $gray-800 !important;
+    }
+  }
+}

@@ -7,7 +7,7 @@
     <meta name="author" content="Alexis De Chiara">
     <meta name="description" content="CV et portfolio en ligne de Alexis De Chiara">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="color-scheme" content="light">
+    <meta name="color-scheme" content="light dark">
     <!-- Favicons -->
     <link rel="icon" type="image/png" href="assets/img/favicon.png">
     <link rel="shortcut icon" href="assets/img/favicon.ico"/>
@@ -20,12 +20,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!-- Personnals files -->
     <link rel="stylesheet" href="assets/css/main.css">
-    <script src="assets/js/main.js"></script>
+    <script src="assets/js/main.js" defer></script>
     <title>Alexis De Chiara</title>
 </head>
 <body>
 <header class="bg-blue">
-    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-blue" id="navigation">
+    <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-blue darkmode-auto" id="navigation">
         <div class="container-fluid">
             <button class="navbar-toggler" type="button"
                     data-bs-toggle="collapse" data-bs-target="#toggler" aria-controls="toggler"
@@ -46,26 +46,26 @@
 </header>
 <main>
     <div class="container-fluid bg-blue d-flex flex-column align-items-center" id="presentation">
-        <h1 class="text-center col-12 fw-bold mb-5 text-light d-none">Présentation</h1>
+        <h1 class="text-center col-12 fw-bold mb-5 text-dark darkmode-auto d-none">Présentation</h1>
         <div class="container row justify-content-center align-items-center g-5">
             <div class="col-xs-12 col-md-8 col-lg-5 col-xl-5 mb-3">
                 <svg viewBox="0 0 200 187" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <mask id="mask0" style="mask-type:alpha">
                         <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547
-        130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
-        97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
-        0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775
+                                97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666
+                                0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
                     </mask>
                     <g mask="url(#mask0)">
                         <path d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346
-        165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
-        129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
-        -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
+                                165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403
+                                129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028
+                                -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"/>
                         <image xlink:href="assets/img/profil.jpg" y="-10px" width="100%"/>
                     </g>
                 </svg>
             </div>
-            <div class="col-xs-12 col-md-10 col-lg-5 col-xl-5 text-white">
+            <div class="col-xs-12 col-md-10 col-lg-5 col-xl-5 text-light darkmode-auto">
                 <div class="row row-cols-1 g-3 justify-content-start mb-2">
                     <div class="col">
                         <h1 class="fw-bolder">Alexis De Chiara</h1>
@@ -85,20 +85,20 @@
                 </div>
             </div>
         </div>
-        <a href="#skills" class="nav-link scroll-below badge rounded-pill fs-5 my-3 text-light"><i class="bi bi-mouse"></i> Défiler vers le bas <i class="bi bi-arrow-down-short"></i></a>
+        <a href="#skills" class="nav-link scroll-below badge rounded-pill fs-5 my-3 text-light darkmode-auto"><i class="bi bi-mouse"></i> Défiler vers le bas <i class="bi bi-arrow-down-short"></i></a>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="reverse">
-        <path class="wave-blue" fill-opacity="1"
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="bg-light darkmode-auto">
+        <path fill-opacity="1" class="wave-blue transition-all duration-300 ease-in-out delay-150" transform="rotate(-180 720 160)"
               d="M0,192L60,208C120,224,240,256,360,229.3C480,203,600,117,720,106.7C840,96,960,160,1080,165.3C1200,171,1320,117,1380,90.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
         </path>
     </svg>
-    <div class="container-fluid" id="skills">
-        <h1 class="text-center fw-bold mb-5">Compétences</h1>
+    <div class="container-fluid bg-light text-dark darkmode-auto" id="skills">
+        <h1 class="text-center fw-bold mb-5 darkmode-auto">Compétences</h1>
         <div class="container d-flex justify-content-center align-content-center">
             <div class="accordion" id="skills-accordion"  style="width: 750px">
-                <div class="accordion-item">
+                <div class="accordion-item bg-light darkmode-auto">
                     <h2 class="accordion-header" id="skills-headingOne">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapsOne" aria-expanded="true" aria-controls="skills-collapsOne">
+                        <button class="accordion-button darkmode-auto" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapsOne" aria-expanded="true" aria-controls="skills-collapsOne">
                             Languages de programmation
                         </button>
                     </h2>
@@ -117,9 +117,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item bg-light darkmode-auto">
                     <h2 class="accordion-header" id="skills-headingTwo">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapsTwo" aria-expanded="true" aria-controls="skills-collapsTwo">
+                        <button class="accordion-button darkmode-auto" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapsTwo" aria-expanded="true" aria-controls="skills-collapsTwo">
                             Système de Gestion de Base de données
                         </button>
                     </h2>
@@ -135,9 +135,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item bg-light darkmode-auto">
                     <h2 class="accordion-header" id="skills-headingThree">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseThree" aria-expanded="true" aria-controls="skills-collapseThree">
+                        <button class="accordion-button darkmode-auto" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseThree" aria-expanded="true" aria-controls="skills-collapseThree">
                             Frameworks
                         </button>
                     </h2>
@@ -157,9 +157,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item bg-light darkmode-auto">
                     <h2 class="accordion-header" id="skills-headingFour">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseFour" aria-expanded="true" aria-controls="skills-collapseFour">
+                        <button class="accordion-button darkmode-auto" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseFour" aria-expanded="true" aria-controls="skills-collapseFour">
                             Outils de gestion
                         </button>
                     </h2>
@@ -177,9 +177,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item bg-light darkmode-auto">
                     <h2 class="accordion-header" id="skills-headingFive">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseFive" aria-expanded="true" aria-controls="skills-collapseFive">
+                        <button class="accordion-button darkmode-auto" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseFive" aria-expanded="true" aria-controls="skills-collapseFive">
                             Outils de développement et de conception
                         </button>
                     </h2>
@@ -202,9 +202,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="accordion-item">
+                <div class="accordion-item bg-light darkmode-auto">
                     <h2 class="accordion-header" id="skills-headingSix">
-                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseSix" aria-expanded="true" aria-controls="skills-collapseSix">
+                        <button class="accordion-button darkmode-auto" type="button" data-bs-toggle="collapse" data-bs-target="#skills-collapseSix" aria-expanded="true" aria-controls="skills-collapseSix">
                             Logiciels de traitement
                         </button>
                     </h2>
@@ -226,30 +226,30 @@
             </div>
         </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" class="bg-light darkmode-auto">
         <path class="wave-red" fill="#dc3545" fill-opacity="1"
               d="M0,192L60,202.7C120,213,240,235,360,213.3C480,192,600,128,720,117.3C840,107,960,149,1080,138.7C1200,128,1320,64,1380,32L1440,0L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z">
         </path>
     </svg>
     <div class="container-fluid bg-red" id="career">
-        <h1 class="text-center text-light fw-bold mb-5">Carrière</h1>
-        <div class="container timeline py-5">
-            <div class="timeline-container timeline-left">
-                <div class="content rounded">
+        <h1 class="text-center text-light fw-bold mb-5 darkmode-auto">Carrière</h1>
+        <div class="container timeline darkmode-auto py-5">
+            <div class="timeline-container timeline-left darkmode-auto">
+                <div class="content rounded bg-light text-dark darkmode-auto">
                     <h3> <span class="badge bg-secondary">2019</span> Baccalauréat Scientifique</h3>
-                    <p class="fs-5">Lycée Calmette</p>
+                    <p class="fs-5 ">Lycée Calmette</p>
                     <p class="text-justify">Option ISN avec de la programmation en java et python, mais aussi apprentissage du html5 et css3 à part.</p>
                 </div>
             </div>
-            <div class="timeline-container timeline-right">
-                <div class="content rounded">
+            <div class="timeline-container timeline-right darkmode-auto">
+                <div class="content rounded bg-light text-dark darkmode-auto">
                     <h3><span class="badge bg-secondary">2021</span> DUT Informatique</h3>
                     <p class="fs-5">IUT Nice Côte d'Azur</p>
                     <p class="text-justify">Formation initiale menant sur l'apprentissage de l'ensemble des types de langage de programmation existants.</p>
                 </div>
             </div>
-            <div class="timeline-container timeline-left">
-                <div class="content rounded">
+            <div class="timeline-container timeline-left darkmode-auto">
+                <div class="content rounded bg-light text-dark darkmode-auto">
                     <h3><span class="badge bg-secondary">2021</span> Stage en entreprise</h3>
                     <p class="fs-5">UBS (Monaco) S.A.</p>
                     <p class="text-justify">Stage de 4 mois pour l'obtention du DUT à UBS Monaco en tant que développeur web</p>
@@ -257,12 +257,12 @@
             </div>
         </div>
     </div>
-    <svg height="100%" width="100%" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+    <svg height="100%" width="100%" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class=" bg-light darkmode-auto transition duration-300 ease-in-out delay-150">
         <path d="M 0,400 C 0,400 0,200 0,200 C 104.21052631578951,178.57416267942585 208.42105263157902,157.14832535885168 306,169 C 403.578947368421,180.85167464114832 494.52631578947353,225.98086124401914 585,223 C 675.4736842105265,220.01913875598086 765.4736842105265,168.92822966507177 859,168 C 952.5263157894735,167.07177033492823 1049.578947368421,216.3062200956938 1147,230 C 1244.421052631579,243.6937799043062 1342.2105263157896,221.8468899521531 1440,200 C 1440,200 1440,400 1440,400 Z"
               stroke="none" stroke-width="0" fill="#dc3545ff" class="wave-red transition-all duration-300 ease-in-out delay-150" transform="rotate(-180 720 200)">
         </path>
     </svg>
-    <div class="container-fluid" id="portfolio">
+    <div class="container-fluid bg-light text-dark darkmode-auto" id="portfolio">
         <h1 class="text-center fw-bold mb-5">Portfolio</h1>
         <div class="container">
             <div class="row justify-content-center align-items-center g-5">
@@ -275,12 +275,12 @@
             </div>
         </div>
     </div>
-    <svg height="100%" width="100%" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150">
+    <svg height="100%" width="100%" viewBox="0 0 1440 400" xmlns="http://www.w3.org/2000/svg" class="bg-light darkmode-auto transition duration-300 ease-in-out delay-150">
         <path
                 d="M 0,400 C 0,400 0,200 0,200 C 93.64285714285714,175.03571428571428 187.28571428571428,150.07142857142858 292,174 C 396.7142857142857,197.92857142857142 512.5,270.75 655,263 C 797.5,255.25 966.7142857142858,166.92857142857142 1102,143 C 1237.2857142857142,119.07142857142858 1338.642857142857,159.53571428571428 1440,200 C 1440,200 1440,400 1440,400 Z" stroke="none" stroke-width="0" fill="#212529ff" class="wave-gray-900 transition-all duration-300 ease-in-out delay-150">
         </path>
     </svg>
-    <div class="container-fluid bg-dark text-light row justify-content-center m-0" id="contact">
+    <div class="container-fluid bg-dark text-light darkmode-auto row justify-content-center m-0" id="contact">
         <h1 class="col-12 text-center fw-bold">Contact</h1>
         <!--
         <form class="row" method="POST" style="width: 750px;">
@@ -309,7 +309,7 @@
         </form>
         <?php include 'assets/php/send_email.php';?>
         -->
-        <div class="row justify-content-center g-5">
+        <div class="row justify-content-center g-5 text-light darkmode-auto">
             <div class="col-auto">
                 <a href="mailto:alexis.de-chiara@hotmail.fr" class="d-flex flex-column text-decoration-none text-light text-wrap">
                     <i class="fas fa-envelope fs-1 align-self-center"></i>
@@ -338,7 +338,7 @@
     </div>
 </main>
 <footer>
-    <div class="container-fluid bg-gray-900 text-light text-center p-3">
+    <div class="container-fluid bg-gray-900 text-light text-center p-3 darkmode-auto">
         <div class="row">
             <div class="col-xs-12 col-md-3 text-md-start">
                 Site sous licence MIT
@@ -352,5 +352,7 @@
         </div>
     </div>
 </footer>
+<Button id="colorThemeSwitcher" class="fs-4 border-0 rounded-circle shadow-sm bg-light darkmode-auto position-fixed bottom-10 end-10 translate-middle text-center display-flex"
+        style="height:50px;width:50px">🌗</Button>
 </body>
 </html>
