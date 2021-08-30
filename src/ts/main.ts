@@ -14,7 +14,7 @@ window.onload = () => {
     console.log("Page chargée en " + Math.round(end-start)/1000 + " secondes");
 }
 
-let DEBUG:boolean = true;
+let DEBUG:boolean = false;
 fetch("assets/html/modals.html")
     .then(response => {
         return response.text()
@@ -26,7 +26,7 @@ fetch("assets/html/modals.html")
 let darkPref: boolean = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
 function getDarkmode(value:String): darkmode{
-    console.log("value : " + value);
+    if(DEBUG)console.log("value : " + value);
     switch(Number(value)){
         case darkmode.enabled:
             if(DEBUG) console.log("get darkmode : " + darkmode.enabled);
@@ -66,15 +66,13 @@ function nextDarkmode(d: darkmode): darkmode{
 }
 
 let currentTheme: darkmode;
-let localTheme:boolean = false;
 if(localStorage.getItem("theme")) {
     if(DEBUG)console.log("local storage not null ("+ localStorage.getItem("theme")+")");
-    localTheme = true;
     currentTheme = getDarkmode(localStorage.getItem("theme"));
 }
 else {
     if(DEBUG)console.log("local storage null ("+ localStorage.getItem("theme")+")");
-    currentTheme = darkmode.auto;
+    currentTheme = darkmode.disabled;
 }
 function updateDarkmodeButton(e:any): void {
     switch (currentTheme) {
